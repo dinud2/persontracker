@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person Tracking</title>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script src="./app.js"></script>
+</head>
+<body>
+    <form>
+        <label for="fname">Who would like to track? (Name)</label>
+        <input type="text" id="fname" name="fname"><br>
+    </form>
+    <div id="map"></div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+</body>
+</html>
